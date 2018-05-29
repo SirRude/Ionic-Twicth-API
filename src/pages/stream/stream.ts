@@ -47,7 +47,7 @@ export class StreamPage {
 
   }
   updateChatUrl() {
-    this.dangerousChatUrl = 'https://www.twitch.tv/embed/'+this.name+ '/chat' ;
+    this.dangerousChatUrl = 'https://www.twitch.tv/embed/'+this.name+ '/chat?darkpopout' ;
     this.chatUrl =
             this.sanitizer.bypassSecurityTrustResourceUrl(this.dangerousChatUrl);
   
